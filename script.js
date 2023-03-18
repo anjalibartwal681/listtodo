@@ -24,6 +24,7 @@ function time() {
     d = new Date
     h = d.getHours()
     m = d.getMinutes()
+    s = d.getseconds() 
     if (h > 12) {
         h = h - 12
     }
@@ -33,7 +34,10 @@ function time() {
     if (m < 10) {
         m = "0" + m
     }
-    document.getElementById("time").innerHTML = `${h} : ${m}`
+    if(s < 10){
+        s="0"+ s
+    }
+    document.getElementById("time").innerHTML = `${h} : ${m} : ${s}`
     setInterval(time, 1000)
 }
 
