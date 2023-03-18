@@ -24,7 +24,7 @@ function time() {
     d = new Date
     h = d.getHours()
     m = d.getMinutes()
-    s = d.getseconds() 
+    s = d.getSeconds() 
     if (h > 12) {
         h = h - 12
     }
